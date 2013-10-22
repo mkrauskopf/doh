@@ -1,4 +1,4 @@
-doh
+DOH
 ===
 
 Discrete Optimization in Haskell

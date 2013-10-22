@@ -1,0 +1,36 @@
+Name:               doh
+Version:            0.0.1
+
+Synopsis:           TODO
+Description:        TODO
+License:            BSD3
+License-file:       LICENSE
+Author:             Martin Krauskopf
+Maintainer:         martin.krauskopf@gmail.com
+Copyright:          (c) 2013 Martin Krauskopf
+Homepage:           https://github.com/mkrauskopf/doh
+Category:           Optimization
+Cabal-version:      >= 1.8
+Build-type:         Simple
+
+Source-repository head
+  Type:             git
+  Location:         git://github.com/mkrauskopf/doh.git
+
+Library
+  GHC-options:      -Wall
+  Exposed-modules:  DOH.Knapsack.BaBSolver
+  Build-depends:    base >= 4 && < 5
+                  , containers
+                  , mtl
+
+Test-Suite test
+  Type:             exitcode-stdio-1.0
+  Main-is:          main.hs
+  hs-source-dirs:   ., test
+  GHC-options:      -Wall
+  Build-depends:    base >= 4 && < 5
+                  , hspec >= 1.4
+                  , HUnit
+                  , test-framework-quickcheck2
+
